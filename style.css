@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -8,17 +8,40 @@
 
 body {
   display: flex;
+  background-color: rgb(243, 243, 243);
 }
 
 #container > img {
-  height: 100vh;
+  height: 100%;
   width: 28vw;
 }
 
+#container {
+  position: relative;
+}
+
+.odin {
+  position: relative;
+  background-color: rgba(29, 29, 29, 0.747);
+
+  top: -500px;
+
+  display: flex;
+}
+.odin p {
+  margin: 17px 0 0 7px;
+  font-size: 40px;
+  color: white;
+  font-family: "Bodoni Moda", serif;
+}
+
+.odin > img {
+  margin: 0 0 0 140px;
+}
 .new-para > div {
   display: flex;
   flex-wrap: wrap;
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
   font-weight: 700;
   font-size: 17px;
 }
@@ -32,18 +55,9 @@ body {
   margin-top: 20px;
 }
 
-/* fieldset div{
-  border: none;
-display: flex;
-flex-wrap: wrap;
-flex: 1
-;
-} */
-
 fieldset > div {
   margin-bottom: 20px;
   width: 45%;
-  
 }
 
 fieldset {
@@ -51,20 +65,64 @@ fieldset {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  max-width: 50%;
+  max-width: 60%;
   border: none;
 }
 
 label {
   display: block;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
 }
 
-legend{
- position: relative;
- bottom: -20px;
- font-size: 25px;
+legend {
+  position: relative;
+  bottom: -20px;
+  font-size: 25px;
 }
 
-.fieldset{
-  background-color: yellow;
+.fieldset {
+  background-color: rgb(255, 255, 255);
+}
+
+.submit-btn > button {
+  padding: 10px 40px 10px 40px;
+  margin: 25px;
+  background-color: #506830;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "open sans", sans-serif;
+  font-weight: 600;
+}
+
+.submit-btn p {
+  margin-left: 25px;
+}
+
+p > a {
+  color: #506830;
+  text-decoration: none;
+}
+
+input {
+  appearance: none;
+  width: 220px;
+  height: 25px;
+  border: 1px solid;
+  border-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+input:invalid {
+  border: none;
+  outline: 1px solid red;
+}
+
+input[type="password"]:invalid {
+  outline: 1px solid red;
 }
