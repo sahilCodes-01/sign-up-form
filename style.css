@@ -23,13 +23,11 @@ body {
 .odin {
   position: relative;
   background-color: rgba(29, 29, 29, 0.747);
-
   top: -500px;
-
   display: flex;
 }
 .odin p {
-  margin: 17px 0 0 7px;
+  margin: 15px 0 0 7px;
   font-size: 40px;
   color: white;
   font-family: "Bodoni Moda", serif;
@@ -38,6 +36,16 @@ body {
 .odin > img {
   margin: 0 0 0 140px;
 }
+
+#container .last{
+  position: relative;
+  top: -98px;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif ;
+  left: 80px;
+  color: rgba(255, 255, 255, 0.733);
+}
+
 .new-para > div {
   display: flex;
   flex-wrap: wrap;
@@ -126,3 +134,4 @@ input:invalid {
 input[type="password"]:invalid {
   outline: 1px solid red;
 }
+
